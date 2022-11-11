@@ -1,0 +1,11 @@
+<div *ngIf="data?.length">
+    <ul>
+      <li *ngFor="let item of data; index as i">{{item.employee_name}}<button (click)="deleteEmp(i)">delete</button></li>
+      
+    </ul>
+    <!-- <div *ngFor="let item of data">
+      {{item.employee_name}}
+    </div> -->
+</div>
+
+<input type="text" >
